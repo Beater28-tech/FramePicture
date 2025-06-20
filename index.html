@@ -9,24 +9,29 @@
 </head>
 <body>
   <div class="container">
-    <h1>🖼️ Frame & Photo </h1>
+    <h1>🖼️ Frame & Photo</h1>
 
-    <label>Upload Photo:</label>
+    <p><strong>Download The Frame First!</strong></p>
+    <a href="https://www.mediafire.com/view/elfsprgbpq3tinb/frame.png/file" target="_blank">
+      <button>Download Frame</button>
+    </a>
+
+    <label>Upload Frame (PNG):</label>
+    <input type="file" id="frameInput" accept="image/png" />
+    
+    <label>Upload Your Photo:</label>
     <input type="file" id="photoInput" accept="image/*" />
 
     <div>
       <img id="previewImage" style="max-width:100%; display:none;" />
     </div>
 
-    <label>Upload Frame (PNG):</label>
-    <input type="file" id="frameInput" accept="image/png" />
-
     <button id="cropBtn" style="display:none;">Crop & Merge</button>
 
     <canvas id="canvas" width="800" height="800" style="display:none;"></canvas>
 
     <button id="downloadBtn" style="display:none;">Download Final Image</button>
-    <p id="status">Step 1: Upload your photo.</p>
+    <p id="status">Step 1: Download the frame and upload your photo.</p>
   </div>
 
   <script src="https://unpkg.com/cropperjs@1.5.13/dist/cropper.min.js"></script>
