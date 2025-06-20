@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crop and Frame</title>
+  <link rel="stylesheet" href="https://unpkg.com/cropperjs@1.5.13/dist/cropper.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🖼️ Frame & Photo </h1>
+
+    <label>Upload Photo:</label>
+    <input type="file" id="photoInput" accept="image/*" />
+
+    <div>
+      <img id="previewImage" style="max-width:100%; display:none;" />
+    </div>
+
+    <label>Upload Frame (PNG):</label>
+    <input type="file" id="frameInput" accept="image/png" />
+
+    <button id="cropBtn" style="display:none;">Crop & Merge</button>
+
+    <canvas id="canvas" width="800" height="800" style="display:none;"></canvas>
+
+    <button id="downloadBtn" style="display:none;">Download Final Image</button>
+    <p id="status">Step 1: Upload your photo.</p>
+  </div>
+
+  <script src="https://unpkg.com/cropperjs@1.5.13/dist/cropper.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
